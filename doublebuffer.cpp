@@ -3,6 +3,7 @@
 DoubleBuffer::DoubleBuffer(uint16_t size)
   : m_size(size)
   , m_full(false)
+  , m_sequence(0)
 {
 
   m_firstBuffer = new std::vector<int16_t>;
